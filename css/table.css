@@ -1,0 +1,27 @@
+.stats-table {
+    margin: 30px auto;
+}
+.stat-cell {
+    color: #333;
+    text-align: center;
+    padding: 10px;
+}
+.stat-cell[type="id"] {
+    display: none;
+}
+.stat-cell[type="fio"] {
+    text-align: left;
+}
+.stat-header, .stat-header[type="fio"] {
+    padding-right: 10px;
+    text-align: center;
+}
+.stat-header{
+    cursor: pointer;
+}
+.stat-raw:nth-child(2n){
+    background-color: #e5e5e5;
+}
+.stat-raw.summ-tr {
+    border-top: 1px solid #AAA;
+}

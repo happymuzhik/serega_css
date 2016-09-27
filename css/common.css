@@ -1,0 +1,466 @@
+@import "../fonts/osans/osans.css";
+
+html, body, body * {
+  font-family: 'OpenSansRegular';
+  box-sizing: border-box;  
+}
+
+body, html {
+  margin: 0px;
+}
+
+.wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #FFF;
+}
+
+.content {
+  /*padding: 10px;*/
+}
+
+.hidden {
+  display: none;
+}
+
+.header {
+  padding: 8px;
+  /*font-weight: bold;*/
+  text-align: center;
+  cursor: default;
+  height: 40px;
+  border-bottom: 1px solid #CCC;
+}
+
+h1,h2,h3,h4 {
+  text-align: center;
+}
+
+.main-content {
+  background-color: #fff;
+}
+
+.header.left {
+  text-align: left;
+}
+
+.header.right {
+  text-align: right;
+}
+label {
+  cursor: pointer;
+}
+input[type="checkbox"].small,
+input[type="radio"].small {
+  margin-top: 5px;
+}
+
+input.small, select.small {
+  height: 26px;
+  padding: 0px 10px;
+  font-size: 11pt;
+  line-height: 11pt;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+  margin-top: 14px;
+}
+input, select {
+  margin-bottom: 5px;
+  width: 100%;
+  height: 44px;
+  padding: 10px;
+  font-size: 11pt;
+  line-height: 11pt;
+  border: 1px solid rgb(169, 169, 169);
+}
+
+input:focus, select:focus {
+  outline: none;
+}
+
+.button.expand {
+  width: 100%;
+}
+
+.button.danger:hover, button.danger:hover {
+  background-color: #F44336;
+}
+
+.button.danger, button.danger {
+  border: 2px solid #F44336;
+  color: #F44336;
+}
+
+.button.info:hover, button.info:hover {
+  background-color: #2196F3;
+}
+
+.button.info, button.info {
+  border: 2px solid #2196F3;
+  color: #2196F3;
+}
+
+.button.success:hover, button.success:hover {
+  background-color: #4CAF50;
+}
+
+.button.success, button.success {
+  border: 2px solid #4CAF50;
+  color: #4CAF50;
+}
+
+.button:hover, button:hover {
+  background-color: #9E9E9E;
+  color: #fff;
+}
+
+.button:active, button:active {
+  position: relative;
+  top: 1px;
+  left: -1px;
+}
+
+.button:focus, button:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.button.inline, button.inline{
+	background-color: #9E9E9E;
+	border-color: #9E9E9E;
+	color: #FFF;
+}
+
+.button.inline:hover, button.inline:hover{
+	background-color: #717171;
+	border-color: #717171;
+	color: #FFF;
+}
+
+.button.info.inline, button.info.inline{
+	background-color: #2196F3;
+	border-color: #2196F3;
+	color: #FFF;
+}
+
+.button.info.inline:hover, button.info.inline:hover{
+	background-color: #0367B4;
+	border-color: #0367B4;
+	color: #FFF;
+}
+
+.button.danger.inline, button.danger.inline{
+	background-color: #F44336;
+	border-color: #F44336;
+	color: #FFF;
+}
+
+.button.danger.inline:hover, button.danger.inline:hover{
+	background-color: #A90F03;
+	border-color: #A90F03;
+	color: #FFF;
+}
+
+.button.success.inline, button.success.inline{
+	background-color: #4CAF50;
+	border-color: #4CAF50;
+	color: #FFF;
+}
+
+.button.success.inline:hover, button.success.inline:hover{
+	background-color: #15781B;
+	border-color: #15781B;
+	color: #FFF;
+}
+
+.button, button {
+  font-size: 15px;
+  border: 2px solid #9E9E9E;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  color: #9E9E9E;
+  /*background-color: #fff;*/
+  background-color: transparent;
+  -webkit-transition: all 100ms ease-in-out;
+  -moz-transition: all 100ms ease-in-out;
+  -o-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+
+div.button{
+  display: inline-block;
+}
+
+button.noborder, .button.noborder{
+  border: none;
+}
+
+.button.noborder.info:hover, button.noborder.info:hover {
+  color: #2196F3;
+  background-color: #fff;
+}
+
+.button.noborder.success:hover, button.noborder.success:hover {
+  color: #4CAF50;
+  background-color: #fff;
+}
+
+.button.noborder.danger:hover, button.noborder.danger:hover {
+  color: #A90F03;
+  background-color: #fff;
+}
+
+.button.noborder:hover, button.noborder:hover {
+  background-color: transparent;
+  color: #000;
+}
+
+.button.noborder.info:hover, button.noborder.info:hover,
+.button.noborder.success:hover, button.noborder.success:hover,
+.button.noborder.danger:hover, button.noborder.danger:hover{
+  background-color: transparent;
+}
+.button.noborder.inline:hover, button.noborder.inline:hover{
+  background-color: #717171;
+  border-color: #717171;
+  color: #FFF;
+}
+.button.noborder.inline.info:hover, button.noborder.inline.info:hover{
+  background-color: #0367B4;
+  border-color: #0367B4;
+  color: #FFF;
+}
+.button.noborder.inline.success:hover, button.noborder.inline.success:hover{
+  background-color: #15781B;
+  border-color: #15781B;
+  color: #FFF;
+}
+.button.noborder.inline.danger:hover, button.noborder.inline.danger:hover{
+  background-color: #A90F03;
+  border-color: #A90F03;
+  color: #FFF;
+}
+
+.button.noborder, button.noborder {
+  border: none;
+}
+.button.wide, button.wide {
+  width: 100%;
+}
+ 
+.button.small, button.small {
+  font-size: 12px;
+  padding: 3px 5px;
+  margin-left: 3px;
+  height: 26px;  
+}
+
+.section.head {
+  border-bottom: 1px solid #333;
+  height: 40px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.section.two-cols .left-col {  
+  float: left;
+  width: 20%;
+}
+.section.two-cols .right-col {
+  float: left;
+  width: 80%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table td {
+  padding: 10px 0px 10px 10px;
+}
+
+table td.center, table th.center {
+  text-align: center;
+}
+
+table td.right, table th.right {
+  text-align: right;
+}
+
+table td.nowrap, table th.nowrap {  
+  white-space: nowrap;
+}
+
+table tr:nth-child(2n+1) {
+  background-color: #e5e5e5;
+}
+
+table tr td:last-child {
+  padding-right: 10px;
+}
+
+table th {
+  background-color: #fff;
+  padding: 10px;
+}
+.row.no-padding {
+  margin: 0px;
+  padding: 0px;
+}
+.row,
+.r {
+  float: left;
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 0px 2.5px;
+  clear: both;
+}
+.row .column-1,
+.row .column-2,
+.row .column-3,
+.row .column-4,
+.row .column-5,
+.row .column-6,
+.row .column-7,
+.row .column-8,
+.row .column-9,
+.row .column-10,
+.row .column-11,
+.row .column-12,
+.r .c-1,
+.r .c-2,
+.r .c-3,
+.r .c-4,
+.r .c-5,
+.r .c-6,
+.r .c-7,
+.r .c-8,
+.r .c-9,
+.r .c-10,
+.r .c-11,
+.r .c-12 {
+  float: left;
+  padding: 0px 2.5px;
+  min-height: 1px;
+}
+.row .column-1.no-padding,
+.row .column-2.no-padding,
+.row .column-3.no-padding,
+.row .column-4.no-padding,
+.row .column-5.no-padding,
+.row .column-6.no-padding,
+.row .column-7.no-padding,
+.row .column-8.no-padding,
+.row .column-9.no-padding,
+.row .column-10.no-padding,
+.row .column-11.no-padding,
+.row .column-12.no-padding,
+.r .c-1.no-padding,
+.r .c-2.no-padding,
+.r .c-3.no-padding,
+.r .c-4.no-padding,
+.r .c-5.no-padding,
+.r .c-6.no-padding,
+.r .c-7.no-padding,
+.r .c-8.no-padding,
+.r .c-9.no-padding,
+.r .c-10.no-padding,
+.r .c-11.no-padding,
+.r .c-12.no-padding {
+  padding: 0px;
+}
+
+.row .column-1.float-right,
+.row .column-2.float-right,
+.row .column-3.float-right,
+.row .column-4.float-right,
+.row .column-5.float-right,
+.row .column-6.float-right,
+.row .column-7.float-right,
+.row .column-8.float-right,
+.row .column-9.float-right,
+.row .column-10.float-right,
+.row .column-11.float-right,
+.row .column-12.float-right,
+.r .c-1.float-right,
+.r .c-2.float-right,
+.r .c-3.float-right,
+.r .c-4.float-right,
+.r .c-5.float-right,
+.r .c-6.float-right,
+.r .c-7.float-right,
+.r .c-8.float-right,
+.r .c-9.float-right,
+.r .c-10.float-right,
+.r .c-11.float-right,
+.r .c-12.float-right {
+  float: right;
+}
+
+.row .column-1,
+.r .c-1 {
+  width: 8.333333%;
+}
+
+.row .column-2,
+.r .c-2 {
+  width: 16.666666%;
+}
+
+.row .column-3,
+.r .c-3 {
+  width: 25%;
+}
+
+.row .column-4,
+.r .c-4 {
+  width: 33.333333%;
+}
+
+.row .column-5,
+.r .c-5 {
+  width: 41.666666%;
+}
+
+.row .column-6,
+.r .c-6 {
+  width: 50%;
+}
+
+.row .column-7,
+.r .c-7 {
+  width: 58.333333%;
+}
+
+.row .column-8,
+.r .c-8 {
+  width: 66.666666%;
+}
+
+.row .column-9,
+.r .c-9 {
+  width: 75%;
+}
+
+.row .column-10,
+.r .c-10 {
+  width: 83.333333%;
+}
+
+.row .column-11,
+.r .c-11 {
+  width: 91.666666%;
+}
+
+.row .column-12,
+.r .c-12 {
+  width: 100%;
+}

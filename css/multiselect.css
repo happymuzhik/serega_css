@@ -1,0 +1,73 @@
+.multi-select-hidden{
+	display: none;
+}
+.multi-select, .multi-select * {
+	box-sizing: border-box;
+}
+.multi-select-label {
+	padding: 10px;
+    min-height: 39px;
+    cursor: pointer;
+}
+.multi-select-label:empty:not(:focus):before{
+    content:attr(data-text);
+    color: #A9ABAE;
+}
+.multi-select-values .multi-select-option {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #FFF;
+}
+.multi-select-values {
+	display: none;
+	position: fixed;
+	background-color: #FFF;
+	border: 1px solid #cacaca;
+	overflow: auto;
+	max-height: 500px;
+	margin-top: -1px;
+}
+.multi-select-values.active {
+	display: block;
+}
+.multi-select-values.attached{
+	position: initial;
+}
+.multi-select-values .multi-select-option.selected {
+    background-color: #2199e8;
+    color: #FFF;
+}
+.multi-select-values .multi-select-option:hover {
+    background-color: #1583cc;
+    color: #FFF;
+}
+.multi-select-modal {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: #333;
+    top: 0px;
+    left: 0px;
+    opacity: 0.6;
+    cursor: pointer;
+    z-index: 10;
+}
+.popup .multi-select-values {
+	padding: 10px;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	margin-left: -200px;
+	margin-top: -300px;	
+	z-index: 11;
+}
+.multi-select-popup-label {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #cacaca;
+}
+.oveflow-hidden {
+    overflow: hidden;
+}
