@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IKT Kitchen</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script type="text/javascript" src="js/moment.js"></script>
+	<script type="text/javascript" src="js/pikaday.js"></script>
+	<script type="text/javascript" src="js/matreshka.min.js"></script>
+	<script type="text/javascript" src="js/matreshka-binders-s.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/pikaday.css">
+	<style type="text/css">
+		div.row.grid div{
+			background-color: #E5E5E5;
+			border: 1px solid;
+		}
+	</style>
+</head>
+<body>
+<div class="wrapper">
+	<div class="content">
+		<h1>IKT Kitchen</h1>
+		<h2>Grid</h2>
+		<div class="row grid">
+			<div class="column-1">.row .column-1 1</div>
+			<div class="column-1">1</div>
+			<div class="column-1">1</div>
+			<div class="column-1">1</div>
+			<div class="column-1">1</div>
+			<div class="column-1">1</div>
+			<div class="column-1">1</div>
+			<div class="column-1">1</div>
+			<div class="column-1">1</div>
+			<div class="column-1">1</div>
+			<div class="column-1">1</div>
+			<div class="column-1">1</div>
+		</div>
+		<div class="row no-padding grid">
+			<div class="column-2 no-padding">.row.no-padding .column-2.no-padding 2</div>
+			<div class="column-2 no-padding">2</div>
+			<div class="column-2 no-padding">2</div>
+			<div class="column-2 no-padding">2</div>
+			<div class="column-2 no-padding">2</div>
+			<div class="column-2 no-padding">2</div>
+		</div>
+		<div class="row grid">
+			<div class="column-3">3</div>
+			<div class="column-3">3</div>
+			<div class="column-3">3</div>
+			<div class="column-3">3</div>
+		</div>
+		<div class="row grid">
+			<div class="column-4">4</div>
+			<div class="column-4">4</div>
+			<div class="column-4">4</div>
+		</div>
+		<div class="row grid">
+			<div class="column-6">6</div>
+			<div class="column-6">6</div>
+		</div>
+		<div class="row grid">
+			<div class="column-12">12</div>
+		</div>
+		<div class="row grid">
+			<div class="column-2">2</div>
+			<div class="column-2">2</div>
+			<div class="column-4 float-right">.row .column-4.float-right 4</div>
+		</div>
+		<h2>Buttons</h2>
+		<div  class="row">
+			<button>.button, button</button>
+			<button class="success">.button.success, button.success</button>
+			<button class="info">.button.info, button.info</button>
+			<button class="danger">.button.danger, button.danger</button>
+			<button class="inline">.button.inline, button.inline</button>
+			<button class="success inline">.button.inline.success, button.inline.success</button>
+			<button class="info inline">.button.inline.info, button.inline.info</button>
+			<button class="danger inline">.button.inline.danger, button.inline.danger</button>
+		</div>
+		<div  class="row">
+			<button class="small noborder">.button.small.noborder, button.small.noborder</button>
+			<span class="button small noborder success">.button.small.noborder.success, span.small.noborder.success</span>
+			<div class="button small noborder info">.button.small.noborder.info, div.small.noborder.info</div>
+			<button class="small noborder danger">.button.small.noborder.danger, button.small.noborder.danger</button>
+			<button class="small noborder inline">.button.small.noborder.inline, button.small.noborder.inline</button>
+			<button class="small noborder success inline">.button.small.noborder.inline.success, button.small.noborder.inline.success</button>
+			<button class="small noborder info inline">.button.small.noborder.inline.info, button.small.noborder.inline.info</button>
+			<button class="small noborder danger inline">.button.small.noborder.inline.danger, button.small.noborder.inline.danger</button>
+		</div>
+		<div  class="r">
+			<div class="c-2">
+				<button class="small">.button.small, button.small</button>
+			</div>			
+			<div class="c-8">
+				<button class="wide inline danger">.button.danger.wide.inline, button.danger.wide.inline</button>
+			</div>
+			<div class="c-2">✎ ✖</div>
+		</div>
+		<h2>Inputs</h2>
+		<div class="row">
+			<div class="column-3">
+				<input type="text" autocomplete="off" placeholder="type=[text]" />
+			</div>
+			<div class="column-3">
+				<select>
+					<option value="test">test</option>
+					<option value="test">test</option>
+					<option value="test">test</option>
+					<option value="test">test</option>
+				</select>
+			</div>
+			<div class="column-3">
+				<label for="chk_1">label 1
+					<input type="checkbox" />
+				</label>
+				<label for="chk_1">label 1
+					<input type="checkbox" />
+				</label>
+				<label for="chk_1">label 1
+					<input type="checkbox" />
+				</label>
+			</div>
+			<div class="column-3">
+				<input type="radio" name="ikt" value="0" />
+				<input type="radio" name="ikt" value="1" />
+				<input type="radio" name="ikt" value="2" />
+			</div>
+		</div>
+		<div class="row">
+			<div class="column-3">
+				<input class="small" type="text" autocomplete="off" placeholder="type=[text]" />
+			</div>
+			<div class="column-3">
+				<select class="small">
+					<option value="test">test</option>
+					<option value="test">test</option>
+					<option value="test">test</option>
+					<option value="test">test</option>
+				</select>
+			</div>
+			<div class="column-2">
+				<label for="chk_1">label 1</label>
+				<input id="chk_1" class="small" type="checkbox" />
+				<label for="chk_2">label 2</label>
+				<input id="chk_2" class="small" type="checkbox" />
+				<label for="chk_3">label 3</label>
+				<input id="chk_3" class="small" type="checkbox" />
+			</div>
+			<div class="column-1">
+				<button class="small inline success">small button</button>
+			</div>
+			<div class="column-2">
+				<input class="small" type="radio" name="ikt" value="0" />
+				<input class="small" type="radio" name="ikt" value="1" />
+				<input class="small" type="radio" name="ikt" value="2" />
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
